@@ -1,0 +1,573 @@
+    1  git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+    2  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    3  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    4  vim .zshrc
+    5  source .zshrc
+    6  vim .zshrc
+    7  ls
+    8  source .zshrc
+    9  exit
+   10  git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+   11  source .zshrc
+   12  ls -la
+   13  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+   14  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+   15  source .zshrc
+   16  ls
+   17  vim .zshrc
+   18  source .zshrc
+   19  ls 
+   20  mkdir Docker
+   21  mkdir Ansible
+   22  mkdir Jenkins
+   23  mkdir Packages
+   24  ls 
+   25  ls -la
+   26  ls
+   27  sudo snap install gh 
+   28  git config --global user.email "amulthantharate@gmail.com"
+   29  git config --global user.name "Amul-Thantharate"
+   30  export PATH="/usr/local/bin:$PATH" >> ~/.zshrc
+   31  eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+   32  export PATH="/opt/homebrew/bin:$PATH" >> ~/.zshrc
+   33  eval "$(/opt/homebrew/bin/brew shellenv)"
+   34  brew
+   35  curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+   36  vim .zshrc
+   37  source .zshrc
+   38  nvm -v
+   39  nvm install node
+   40  sudo npm install -g yarn
+   41  brew install neovim
+   42  ls
+   43  brew install terraform
+   44  neovim 
+   45  nvim
+   46  ls
+   47  mkdir -p .config/nvim
+   48  exit
+   49  ls
+   50  cd .config/nvim
+   51  ls
+   52  git clone https://github.com/github/copilot.vim.git \\n  ~/.config/nvim/pack/github/start/copilot.vim
+   53  sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \\n       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+   54  eval "$(/opt/homebrew/bin/brew shellenv)"
+   55  sudo add-apt-repository ppa:neovim-ppa/stable -y
+   56  sudo add-apt-repository ppa:neovim-ppa/unstable -y
+   57  sudo apt update 
+   58  sudo apt install neovim
+   59  nvim init.vim
+   60  nvim coc-settings.json
+   61  ls
+   62  sudo snap install bash-language-server --classic
+   63  sudo apt-get install bash-language-server -y
+   64  sudo snap install bash-language-server --classic
+   65  cd 
+   66  bash-language-server
+   67  gh auth login
+   68  ls
+   69  mkdir Bash
+   70  ls
+   71  cd Bash
+   72  ls
+   73  mkdir Loop
+   74  cd Loop
+   75  ls
+   76  nvim name.sh
+   77  bash name.sh
+   78  ls
+   79  cat authorized_keys
+   80  for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+   81  sudo apt-get update
+   82  sudo apt-get install ca-certificates curl gnupg
+   83  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   84  sudo chmod a+r /etc/apt/keyrings/docker.gpg
+   85  echo \\n  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \\n  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \\n  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   86  sudo apt update 
+   87  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin terraform -y
+   88  sudo groupadd -f docker
+   89  sudo usermod -aG docker $USER
+   90  newgrp docker
+   91  groups
+   92  sudo chown root:docker /var/run/docker.sock
+   93  sudo nvim /usr/lib/systemd/system/docker.service
+   94  ls
+   95  sudo systemctl daemon-reload
+   96  sudo systemctl enable --now docker
+   97  docker login
+   98  sudo chmod 777 /var/run/docker.sock
+   99  sudo systemctl restart docker
+  100  sudo systemctl status jenkins
+  101  ls
+  102  ls -l
+  103  cd 
+  104  ls
+  105  docker login
+  106  sudo apt-get install python3 python3-pip bat -y
+  107  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+  108  ls
+  109  cd Packages
+  110  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"\nunzip awscliv2.zip\nsudo ./aws/install
+  111  cd 
+  112  nvim .zshrc
+  113  fuck
+  114  source .zshrc
+  115  ls
+  116  cd Docker
+  117  mkdir Python-Volume
+  118  cd Python-Volume
+  119  ls
+  120  nvim app.py
+  121  pip install jedi boto3
+  122  nvim app.py
+  123  sudo apt-get install py 
+  124  python3 app.py
+  125  nvim app.py
+  126  python3 app.py
+  127  nvim Dockerfile
+  128  docker build -t myapp .
+  129  nvim Dockerfile
+  130  ls
+  131  docker build -t myapp .
+  132  docker images
+  133  docker run -it -rm --name=myapppython myapp
+  134  docker run -it --rm --name=myapppython myapp
+  135  cat Dockerfile
+  136  docker run -it --rm -v myvol:/myapp/ --name=myapppython myapp
+  137  sudo apt-get install unzip -y
+  138  cd ..
+  139  ls
+  140  npx create-react-app my-app
+  141  sudo ufw disable
+  142  ls 
+  143  cd my-app
+  144  ls
+  145  cd src
+  146  ls
+  147  sudo apt-get install ruby ruby-dev -y
+  148  ls
+  149  nvim App.js
+  150  cd ..
+  151  ls
+  152  touch Dockerfile
+  153  ls
+  154  gs
+  155  ga
+  156  gc "Added a Dockerfile"
+  157  cd 
+  158  nv .zshrc
+  159  source .zshrc
+  160  sudo gem install colorls
+  161  colorls
+  162  nv .zshrc
+  163  source .zshrc
+  164  ls
+  165  ls -la
+  166  ll
+  167  ls
+  168  cd Bash
+  169  ls
+  170  cd Loop
+  171  ls -la
+  172  ll
+  173  cat authorized_keys
+  174  curl -fsSL https://cli.secman.dev | bash
+  175  sudo npm install -g secman
+  176  cd 
+  177  nv .zshrc
+  178  source .zshrc
+  179  fui
+  180  nv .zshrc
+  181  source .zshrc
+  182  cat .zshrc | tail -10
+  183  fuppp
+  184  nv .zshrc
+  185  source .zshrc
+  186  fuppp
+  187  ls
+  188  cd Docker
+  189  ls
+  190  mkdir Python-Volume-2
+  191  mv Python-Volume Python-Volume-1
+  192  ls
+  193  cd Python-Volume-2
+  194  ls
+  195  nv app.py
+  196  ls
+  197  nv app.py
+  198  pip install jedi
+  199  nv app.py
+  200  python3 app.py
+  201  nv app.py
+  202  python3 app.py
+  203  nv app.py
+  204  python3 app.py
+  205  nv Dockerfile
+  206  docker images
+  207  docker build -t app .
+  208  docker rmi app:latest
+  209  nv Dockerfile
+  210  docker build -t app .
+  211  docker run app:latest
+  212  nv server.txt
+  213  docker run app:latest
+  214  docker run -v server.txt:/app/ app:latest
+  215  cat Dockerfile
+  216  docker run -v server.txt:/app/ --rm app:latest
+  217  cat server.txt
+  218  docker run -v server.txt:/app/ --rm app:latest
+  219  pwd
+  220  docker run -v /home/vagrant/Docker/Python-Volume-2/server.txt:/app/server.txt --rm app:latest
+  221  nv server.txt
+  222  docker run -v /home/vagrant/Docker/Python-Volume-2/server.txt:/app/server.txt --rm app:latest
+  223  docker volume ls
+  224  docker inspect myvol 
+  225  docker inspect server.txt
+  226  cd ..
+  227  ls
+  228  nvim my-app
+  229  ls
+  230  mkdir Api-Demo
+  231  cd Api-Demo
+  232  ls -la
+  233  nv app.py
+  234  python3 app.py
+  235  pip install requests
+  236  nv app.py
+  237  python3 app.py
+  238  ls
+  239  nv app.py
+  240  python3 app.py
+  241  cat cat_fact.txt
+  242  python3 app.py
+  243  cat cat_fact.txt
+  244  nv app.py
+  245  python3 app.py
+  246  nv Dockerfile
+  247  ls
+  248  docker build -t cat-dog .
+  249  docker images
+  250  docker inspect cat-dog:latest
+  251  docker rmi cat-dog:latest
+  252  nv requirments.txt
+  253  nv Dockerfile
+  254  docker build -t cat-dog .
+  255  ls 
+  256  mv requirments.txt requirements.txt
+  257  docker build -t cat-dog .
+  258  docker run -rm --name cat cat-dog
+  259  docker run --rm --name cat cat-dog
+  260  sudo apt install mysql-server
+  261  fuck systemctl enable --now  mysql.service
+  262  fuck mysql
+  263  mysql -u root -p
+  264  fuck mysql -u root -p
+  265  exit
+  266  docker images
+  267  ls -la
+  268  ls
+  269  ls- lla
+  270  ls -la
+  271  nvim .zshrc
+  272  ls 
+  273  fuck mysql -u root -p
+  274  mysql -u root
+  275  sudo /usr/local/mysql/support-files/mysql.server stop
+  276  cat .zshrc | tail -10
+  277  fup mysql-server -y
+  278  mysql --version
+  279  fup -y  mysql-server
+  280  mysql --version
+  281  fui mysql-server -y
+  282  fuck systemctl enable --now  mysql.service
+  283  fuck systemctl status mysql
+  284  fuck mysql_secure_installation
+  285  mysql -u root -p
+  286  cd Docker
+  287  ls
+  288  mkdir Container-To-Host
+  289  cd Container-To-Host
+  290  nvim Dockerfile
+  291  docker build -t vol .
+  292  nvim Dockerfile
+  293  docker build -t vol .
+  294  docker images
+  295  docker run -it --name con1 vol /bin/bash
+  296  docker run -it --name con2 --privileged=true --volumes-from con1 ubuntu /bin/bash 
+  297  docker images
+  298  docker pull ubntu
+  299  docker pull ubuntu
+  300  docker run -it --name con2 --privileged=true --volumes-from con1 ubuntu /bin/bash 
+  301  docker ps -a
+  302  docker start con1
+  303  docker attach con1
+  304  docker start con2
+  305  docker attach con2
+  306  ls -la
+  307  docker volume ls
+  308  docker inspect myvol 
+  309  ls
+  310  mkdir test
+  311  cd test
+  312  touch 1 2 3 
+  313  ls 
+  314  cat ~/.zshrc
+  315  fui calender -y
+  316  fui calendar -y
+  317  ls -la
+  318  calendar
+  319  calendar >> cal.txt
+  320  timedatectl
+  321  fup
+  322  fupp
+  323  cat ~/.zshrc
+  324  fuppp
+  325  ls -la
+  326  nvm list-remote
+  327  cd Docker/Container-To-Host
+  328  ls
+  329  docker run -it --name hostcont -v /home/vagrant/Docker/Container-To-Host/test:/amul --privileged=true ubuntu
+  330  cd test
+  331  ls
+  332  docker ps -a
+  333  cd 
+  334  cd Docker
+  335  ls
+  336  mkdir Database-Docker
+  337  c d
+  338  cd 
+  339  cd Packages
+  340  ls
+  341  unzip awscliv2.zip
+  342  aws --version
+  343  aws configure
+  344  aws
+  345  ls
+  346  sudo ./install
+  347  aws --version
+  348  export AWS_ACCESS_KEY_ID=AKIAZLY6NAKK5AQYKOBJ 
+  349  export AWS_SECRET_ACCESS_KEY=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
+  350  export AWS_DEFAULT_REGION=ap-northeast-1
+  351  aws s3 ls
+  352  cd ..
+  353  ls
+  354  nv ace.csv
+  355  cd 
+  356  cd Docker/
+  357  ls
+  358  cd Database-Docker
+  359  ls
+  360  pip install pymysql
+  361  nv app.py
+  362  python3 app.py
+  363  nv app.py
+  364  python3 app.py
+  365  nv app.py
+  366  python3 app.py
+  367  nv app.py
+  368  python3 app.py
+  369  ls
+  370  cat servers.txt
+  371  touch  requirements.txt
+  372  cat app.py | tail -10
+  373  cat app.py
+  374  nvim requirements.txt
+  375  ls -la
+  376  nv Dockerfile
+  377  docker build -t data-base .
+  378  docker images
+  379  docker rmi data-base:latest
+  380  nv app.py
+  381  docker build -t data-base .
+  382  docker run -d -e MYSQL_ROOT_PASSWORD=Root@Root12 --name=mysqld data-base
+  383  docker start mysqld
+  384  docker attach mysqld
+  385  docker stop mysqld
+  386  docker rm mysqld
+  387  docker run -d -env MYSQL_ROOT_PASSWORD=Root@Root12 -env MYSQL_DATABASE=userinfo --name=mysqld data-base
+  388  docker run -d -env MYSQL_ROOT_PASSWORD="Root@Root12" -env MYSQL_DATABASE="userinfo" --name=mysqld data-base
+  389  docker run -d -env MYSQL_ROOT_PASSWORD="Root@Root12" -env MYSQL_DATABASE="userinfo" --name mysqld data-base
+  390  docker rmi data-base:latest
+  391  docker build -t database .
+  392  docker run -d -env MYSQL_ROOT_PASSWORD="Root@Root12" -env MYSQL_DATABASE="userinfo" --name mysqld database
+  393  docker run --help
+  394  docker run -d -e MYSQL_ROOT_PASSWORD="Root@Root12" -e MYSQL_DATABASE="userinfo" --name mysqld database
+  395  docker ps 
+  396  docker ps -a
+  397  docker start mysqld
+  398  docker inspect mysqld
+  399  docker ps -a
+  400  docker rm mysqld
+  401  docker run -d -e MYSQL_ROOT_PASSWORD="Root@Root12" -e MYSQL_DATABASE="userinfo" --name mysqld database
+  402  docker ps 
+  403  docker network ls
+  404  docker stop mysqld
+  405  docker run -d -p 80:80 nginx
+  406  curl localhost:80
+  407  docker ps 
+  408  docker ps -a
+  409  docker stop nginx
+  410  docker stop 8d3a45930aa3
+  411  docker rm 8d3a45930aa3
+  412  ls -la
+  413  nv app.py
+  414  docker rmi database:latest
+  415  docker rm mysqld
+  416  ls -la
+  417  $ docker run --name test-mysql -e MYSQL_ROOT_PASSWORD=strong_password -d mysql
+  418  docker start test-mysql
+  419  docker attach test-mysql
+  420  cd Docker/Database-Docker
+  421  ls
+  422  docker images
+  423  docker ps 
+  424  docker exec -it 590 bash
+  425  docker stop 590c333aa480
+  426  docker images
+  427  docker rmi database:latest
+  428  ls
+  429  docker build -t database .
+  430  docker run -d -e MYSQL_ROOT_PASSWORD="Root@Root12" -e MYSQL_DATABASE="userinfo" -p 3307:3306  --name mysqld database
+  431  docker inspect mysqld
+  432  docker ps
+  433  docker ps -a
+  434  docker rm 136734eaa1f9
+  435  docker rm 1d61355dd644
+  436  docker rm 136734eaa1f9
+  437  docker ps
+  438  docker rmi database:latest
+  439  cd ..
+  440  ls
+  441  docker run -d --name=sonar -p 9000:9000 sonarqube
+  442  docker create --network my-net
+  443  docker network create my-net
+  444  docker network ls
+  445  ls
+  446  cd Database-Docker
+  447  docker images
+  448  cd 
+  449  nv .zshrc
+  450  source .zshrc
+  451  di
+  452  cd Docker/Database-Docker
+  453  di
+  454  docker build -t database .
+  455  docker run -d -e MYSQL_ROOT_PASSWORD="Root@Root12" -e MYSQL_DATABASE="userinfo" --network my-net  --name test-database database
+  456  docker ps
+  457  docker ps -a
+  458  docker inspect 279ff4700ce9 9
+  459  docker inspect 1b0c8a232435f97f15b9434cb1349b5183fce0a65a65ba95b89d29c56e835db6
+  460  ip a s 
+  461  docker rmi database:latest
+  462  docker rmi -f database
+  463  cd ..
+  464  ls
+  465  rm -rf Database-Docker
+  466  ls -al
+  467  docker system prune -a
+  468  di
+  469  docker run -d --name=sonar -p 9000:9000 sonarqube
+  470  docker ps 
+  471  git clone https://gitlab.com/twn-youtube/docker-compose-crash-course.git
+  472  sudo snap install gh 
+  473  gh auth login
+  474  cd docker-compose-crash-course
+  475  ls
+  476  rm -rf .git
+  477  git init
+  478  git add .
+  479  git commit -m "Added a some docker course"
+  480  git push
+  481  git push master
+  482  gh repo create
+  483  gh auth login
+  484  gh repo create
+  485  git push
+  486  git push --set-upstream origin master
+  487  rm -rf .git
+  488  echo "# docker-compose" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin git@github.com:Amul-Thantharate/docker-compose.git\ngit push -u origin main
+  489  git add .
+  490  rm -rf .git
+  491  ls
+  492  \ngit remote add origin git@github.com:Amul-Thantharate/docker-compose.git
+  493  git init
+  494  git add .
+  495  git commit -m "Added a some docker course"
+  496  \ngit remote add origin git@github.com:Amul-Thantharate/docker-compose.git
+  497  git branch -M main
+  498  git push --set-upstream origin main
+  499  cd 
+  500  cd .ssh
+  501  cat id_rsa.pub
+  502  cd ../Docker
+  503  ls
+  504  cd docker-compose-crash-course
+  505  git push --set-upstream origin main
+  506  ls
+  507  cat Dockerfile
+  508  cat docker_commands.md
+  509  > sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10</span>
+  510  > echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
+  511  curl -fsSL https://pgp.mongodb.com/server-7.0.asc | \ sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg \ --dearmor
+  512  curl -fsSL https://pgp.mongodb.com/server-7.0.asc |  fuck gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg \ --dearmor
+  513  echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+  514  ls
+  515  rm -rf echo
+  516  echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+  517  fup
+  518  fupp
+  519  cd /etc/apt/sources.list.d
+  520  ls
+  521  fuck rm -rf mongodb-org-7.0.list
+  522  cd 
+  523  cat .zshrc 
+  524  fui  mongodb
+  525  wget -qO- https://www.mongodb.org/static/pgp/server-7.0.asc | sudo tee /etc/apt/trusted.gpg.d/server-7.0.asc
+  526  sudo apt-get install gnupg
+  527  wget -qO- https://www.mongodb.org/static/pgp/server-7.0.asc | sudo tee /etc/apt/trusted.gpg.d/server-7.0.asc
+  528  echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+  529  fupp
+  530  fui mongodb-mongosg
+  531  fui mongodb-mongosh
+  532  mongosh
+  533  curl -fsSL https://pgp.mongodb.com/server-7.0.asc | \\n   sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg \\n   --dearmor
+  534  echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+  535  fupp
+  536  fui mongodb-org
+  537  echo "mongodb-org hold" | sudo dpkg --set-selections\necho "mongodb-org-database hold" | sudo dpkg --set-selections\necho "mongodb-org-server hold" | sudo dpkg --set-selections\necho "mongodb-mongosh hold" | sudo dpkg --set-selections\necho "mongodb-org-mongos hold" | sudo dpkg --set-selections\necho "mongodb-org-tools hold" | sudo dpkg --set-selections
+  538  ps --no-headers -o comm 1
+  539  sudo systemctl enable --now  mongod
+  540  mongosh
+  541  fui docker-compose 
+  542  ls
+  543  cd Docker
+  544  ls
+  545  mkdir Docker-Compose
+  546  cd Docker-Compose
+  547  ls
+  548  cd ..
+  549  ls
+  550  mv docker-compose-crash-course Docker-Compose
+  551  cd Docker-Compose
+  552  ls -la
+  553  exit
+  554  ls
+  555  cd Docker
+  556  ls
+  557  echo "# docker-project" >> README.md
+  558  git init
+  559  git add .
+  560  git commit -m "first commit"
+  561  git branch -M main
+  562  git remote add origin git@github.com:Amul-Thantharate/docker-project.git
+  563  git push --set-upstream origin main
+  564  touch .zshrc
+  565  cd 
+  566  cat .zshrc 
+  567  ls
+  568  cd Docker
+  569  nv .zshrc
+  570  git add .zshrc
+  571  git commit -m "Added a zshrc file"
+  572  git push --set-upstream origin main
+  573  history
